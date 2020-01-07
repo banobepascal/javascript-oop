@@ -37,25 +37,36 @@
 
 // circle.draw();
 
-// Factory function
-function createCircle(radius) {
-  return {
-    radius,
-    draw() {
-      console.log("draw4");
-    }
-  };
-}
+// // Factory function
+// function createCircle(radius) {
+//   return {
+//     radius,
+//     draw() {
+//       console.log("draw4");
+//     }
+//   };
+// }
 
-const circle = createCircle(2);
-console.log(circle);
+// const circle = createCircle(2);
+// console.log(circle);
 
-// constructor functions
-function Circle(radius) {
-  this.radius = radius;
-  this.draw = function() {
-    console.log('draw');
-  }
-}
+// // constructor functions
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.draw = function() {
+//     console.log('draw');
+//   }
+// }
 
-const another = new Circle()
+// const another = new Circle()
+
+// // value vs ref types
+// let x = { value : 10 };
+
+// function increase(x){
+//   x.value++
+// }
+
+// increase(x);
+// console.log(x)
+
