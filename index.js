@@ -22,17 +22,40 @@
 
 // console.log(getSalary.getWage());
 
-const circle = {
-  radius: 1,
-  location: {
-    x: 1,
-    y: 1
-  },
+// // object literal syntax
+// const circle = {
+//   radius: 1,
+//   location: {
+//     x: 1,
+//     y: 1
+//   },
 
-  draw() {
+//   draw() {
+//     console.log("draw");
+//   }
+// };
+
+// circle.draw();
+
+// Factory function
+function createCircle(radius) {
+  return {
+    radius,
+    draw() {
+      console.log("draw4");
+    }
+  };
+}
+
+const circle = createCircle(2);
+console.log(circle);
+
+// constructor functions
+function Circle(radius) {
+  this.radius = radius;
+  this.draw = function() {
     console.log('draw');
   }
-};
+}
 
-circle.draw();
-
+const another = new Circle()
